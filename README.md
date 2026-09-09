@@ -1,17 +1,31 @@
-# flutter_application_1
+# 📝 تطبيق إدارة المهام اليومية (Flutter To-Do App)
 
-A new Flutter project.
+تطبيق متكامل وعصري لإدارة المهام اليومية مبني باستخدام **Flutter**. تم تصميمه باتباع أفضل الممارسات وقواعد **Clean Architecture** مع إدارة حالة التطبيق بواسطة **Provider** وحفظ البيانات محلياً.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ المميزات الرئيسية
 
-A few resources to get you started if this is your first Flutter project:
+- 🎯 **إدارة المهام:** إضافة، إكمال، وتعديل وحذف المهام اليومية بكل سهولة.
+- 🎨 **تصنيف الأولويات:** تحديد مستوى أولوية المهمة (عالية، متوسطة، منخفضة) بألوان مميزة.
+- 📅 **تحديد المواعيد:** اختيار التاريخ والوقت بدقة لكل مهمة.
+- 🌓 **دعم الوضع الداكن:** إمكانية التحويل بين الوضع الداكن (Dark Mode) والفاتح (Light Mode).
+- 💾 **حفظ البيانات محلياً:** بقاء جميع المهام محفوظة على الجهاز حتى بعد إغلاق التطبيق باستخدام `shared_preferences`.
+- 📱 **متوافق مع المنصات:** مصمم ومجرب ليعمل بكفاءة على الويب وأجهزة سطح المكتب والموبايل.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ التقنيات والمكتبات المستخدمة
+
+- **إطار العمل (Framework):** Flutter / Dart
+- **إدارة الحالة (State Management):** Provider
+- **الحفظ المحلي (Local Persistence):** shared_preferences
+- **تنسيق الوقت والتاريخ:** intl
+
+```text
+lib/
+├── models/
+│   └── task.dart           # هيكل البيانات وتحويل البيانات
+├── providers/
+│   └── task_provider.dart  # المنطق البرمجي وإدارة الحالة والحفظ
+└── main.dart               # نقطة بداية التطبيق والواجهات الرئيسية
